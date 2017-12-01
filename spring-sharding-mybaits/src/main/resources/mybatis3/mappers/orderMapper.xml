@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.snowcattle.demo.mapper.OrderMapper">
+
+    <!--批量插入-->
+    <insert id="insertOrder" parameterType="order">
+        INSERT INTO `t_order_${sharding_table_index}` (id, user_id, status)
+        VALUES (#{id},#{userId},#{status})
+    </insert>
+
+</mapper>

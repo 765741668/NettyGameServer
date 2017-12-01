@@ -210,7 +210,7 @@
 		</dependency>
         <dependency>
             <groupId>com.github.jwpttcg66</groupId>
-            <artifactId>GameThreadPool</artifactId>
+            <artifactId>game-thread-pool</artifactId>
             <version>${GameThreadPool.version}</version>
         </dependency>
 
